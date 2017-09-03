@@ -1,0 +1,4 @@
+com\henry\notes\model\Note.class
+com\henry\notes\model\Notes.class
+com\henry\notes\App.class
+com\henry\notes\controller\NotesController.class

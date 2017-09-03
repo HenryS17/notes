@@ -1,0 +1,20 @@
+
+To run the application (after downloading the code):
+  1. Run command prompt 
+  2. Go to notes folder
+  3. runrun "java -jar target/notes-0.0.1-SNAPSHOT.jar" in command. (assume Java enviroment is set, Java is in the path).
+
+To test:
+  1. run curl tool.
+  2. run commands (for POST, need to escape the double quotes), , some samples as below:
+     curl -i -H "Content-Type: application/json" -X POST -d "{\"body\" : \"Pick up milk!\"}" http://localhost:8080/api/notes
+
+     curl -i -H "Content-Type: application/json" -X POST -d "{\"body\" : \"Send milk!\"}" http://localhost:8080/api/notes
+
+     curl -i -H "Content-Type: application/json" -X POST -d "{\"body\" : \"Some thing\"}" http://localhost:8080/api/notes/
+
+     curl -i -H "Content-Type: application/json" -X GET http://localhost:8080/api/notes/1
+
+     curl -i -H "Content-Type: application/json" -X GET http://localhost:8080/api/notes?query=thing
+
+     curl -i -H "Content-Type: application/json" -X GET http://localhost:8080/api/notes
